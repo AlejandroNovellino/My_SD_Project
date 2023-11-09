@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_sd_project/screens/home_page.dart';
+import 'package:my_sd_project/screens/track_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +34,11 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      routes: {
+        '/homepage': (context) =>
+            const MyHomePage(title: 'Flutter Demo Home Page'),
+        '/tracklist': (context) => const TrackList(),
+      },
     );
   }
 }
