@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_sd_project/models/track.dart';
-import 'package:my_sd_project/widgets/track_list_element.dart';
 import 'package:my_sd_project/widgets/track_list_element_2.dart';
 
 class TrackList extends StatefulWidget {
