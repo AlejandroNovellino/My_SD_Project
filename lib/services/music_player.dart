@@ -1,11 +1,11 @@
 import 'package:just_audio/just_audio.dart';
 
 class MusicPlayer {
-  AudioPlayer musicPlayer = AudioPlayer();
+  static AudioPlayer musicPlayer = AudioPlayer();
 
   MusicPlayer();
 
-  AudioPlayer getMusicPlayer() {
+  static AudioPlayer getMusicPlayer() {
     return musicPlayer;
   }
 }

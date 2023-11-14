@@ -8,13 +8,25 @@ class TrackListElement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: Icon(
-        Icons.play_arrow,
-        color: Theme.of(context).focusColor,
+    return Container(
+      decoration: BoxDecoration(
+        color: Color.fromARGB(80, 151, 151, 151),
       ),
-      title: Text(trackToDisplay.name),
-      trailing: Text('${trackToDisplay.duration}'),
+      child: ListTile(
+        leading: Icon(
+          Icons.play_arrow,
+          color: Colors.blueAccent,
+        ),
+        title: Text(
+          trackToDisplay.name,
+          style: TextStyle(color: Colors.white, fontSize: 18),
+        ),
+        trailing: Text(
+          '${trackToDisplay.duration}',
+          style: TextStyle(
+              color: Color.fromARGB(213, 180, 180, 180), fontSize: 18),
+        ),
+      ),
     );
   }
 }

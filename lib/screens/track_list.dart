@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_sd_project/models/track.dart';
+import 'package:my_sd_project/widgets/track_list_element.dart';
 import 'package:my_sd_project/widgets/track_list_element_2.dart';
+import 'package:my_sd_project/widgets/track_list_element_3.dart';
 
 class TrackList extends StatefulWidget {
   const TrackList({super.key});
@@ -31,15 +33,15 @@ class _TrackList extends State<TrackList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Color.fromARGB(255, 114, 84, 165),
         title: const Text("Testing list"),
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Theme.of(context).colorScheme.primary,
-              Theme.of(context).colorScheme.secondary,
+              Color.fromARGB(255, 31, 12, 63),
+              Color.fromARGB(255, 31, 12, 63),
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
@@ -52,12 +54,11 @@ class _TrackList extends State<TrackList> {
             children: <Widget>[
               for (var track in tracks) TrackListElement2(track)
             ],
-          ),
-          /*ListView(
-              children: <Widget>[
-                for (var track in tracks) TrackListElement2(track)
-              ],
-            ),*/
+          ), /*
+              ListView(
+            children: <Widget>[
+              for (var track in tracks) TrackListElement(track)
+            ],*/
         ),
       ),
     );
