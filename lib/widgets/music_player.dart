@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:just_audio/just_audio.dart';
-import 'package:my_sd_project/services/music_player.dart';
+//import 'package:just_audio/just_audio.dart';
+//import 'package:my_sd_project/services/music_player.dart';
 
 class MusicPlayerWidget extends StatefulWidget {
   const MusicPlayerWidget({super.key, required this.title});
@@ -22,7 +22,7 @@ class MusicPlayerWidget extends StatefulWidget {
 
 class _MusicPlayerWidget extends State<MusicPlayerWidget> {
   // Widget variables
-  AudioPlayer musicPlayer = MusicPlayer.getMusicPlayer();
+  //AudioPlayer musicPlayer = MusicPlayer.getMusicPlayer();
 
   // Widget methods
 
